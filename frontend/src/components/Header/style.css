@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgb(43, 43, 43);
+}
+header img {
+  width: 3rem;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+header a {
+  text-decoration: none;
+}
+header h1 {
+  color: white;
+}

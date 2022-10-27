@@ -1,0 +1,37 @@
+.container {
+  width: 50rem;
+  height: 40rem;
+  border: 1px solid rgb(255, 202, 202);
+  background: url(../../assets/images/foggy.png) fixed;
+  background-size: cover;
+  background-position: center;
+}
+.contenedor {
+  width: 570px;
+  height: 300px;
+  position: relative;
+  border: 1px solid tomato;
+  margin: 3rem auto;
+  background-color: whitesmoke;
+}
+.bloque {
+  height: 20px;
+  width: 100px;
+  position: absolute;
+  box-shadow: 0px 0px 3px black;
+}
+.usuario {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background-color: crimson;
+  box-shadow: 0px 0px 3px black;
+}
+.bola {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: tomato;
+  box-shadow: 0px 0px 3px black;
+}

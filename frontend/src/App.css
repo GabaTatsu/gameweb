@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "UbuntuFont";
+  src: url("../src/assets/fonts/Ubuntu-R.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+body {
+  font-family: sans-serif;
+  font-family: "UbuntuFont";
+  background: url(../src/assets/images/the-background.png) fixed;
+  background-size: cover;
+  background-position: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
