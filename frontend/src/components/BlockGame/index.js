@@ -13,8 +13,7 @@ const BlockGame = () => {
   const [posicionActualBola, setPosicionActualBola] = useState([270, 40]);
   const [xDireccionBola, setXDireccionBola] = useState(2);
   const [yDireccionBola, setYDireccionBola] = useState(2);
-  console.log(xDireccionBola);
-  console.log(yDireccionBola);
+  console.log(xDireccionBola, yDireccionBola);
 
   useEffect(() => {
     const moverUsuario = (e) => {
@@ -52,24 +51,20 @@ const BlockGame = () => {
     if (
       posicionActualBola[0] >= anchoTablero - diametroBola ||
       posicionActualBola[1] >= altoTablero - diametroBola ||
-      posicionActualBola[0] <= 0 ||
-      posicionActualBola[1] <= 0
+      posicionActualBola[0] <= diametroBola ||
+      posicionActualBola[1] <= diametroBola
     ) {
       if (xDireccionBola === 2 && yDireccionBola === 2) {
         setYDireccionBola(-2);
-        return;
       }
       if (xDireccionBola === 2 && yDireccionBola === -2) {
         setXDireccionBola(-2);
-        return;
       }
       if (xDireccionBola === -2 && yDireccionBola === -2) {
         setYDireccionBola(2);
-        return;
       }
       if (xDireccionBola === -2 && yDireccionBola === 2) {
         setXDireccionBola(2);
-        return;
       }
     }
   };
