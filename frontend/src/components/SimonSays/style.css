@@ -1,0 +1,287 @@
+.simon {
+  padding: 10px;
+  border-radius: 5px;
+  width: 40rem;
+  height: 40rem;
+  border: 1px solid rgb(0, 0, 0);
+  background: url(../../assets/images/bullet-443852_1920.jpg) fixed;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonContainer {
+  width: 512px;
+  height: 512px;
+  background: url(../../assets/images/simon/512x512bb.jpg);
+}
+.square {
+  cursor: pointer;
+}
+.green {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/verdenormal.png);
+  background-position: center;
+  transform: translate(30px, -602px);
+}
+.yellow {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/amarillonormal.png);
+  background-position: center;
+  transform: translate(32px, 59px);
+}
+.red {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/rojonormal.png);
+  background-position: center;
+  transform: translate(272px, 28px);
+}
+.red:disabled {
+  background-color: black;
+}
+.blue {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/azulnormal.png);
+  background-position: center;
+  transform: translate(271px, -151px);
+}
+.green:active {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/verdeoscuro.png);
+  background-position: center;
+  transform: translate(30px, -602px);
+}
+.yellow:active {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/amarillooscuro.png);
+  background-position: center;
+  transform: translate(32px, 59px);
+}
+.red:active {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/rojooscuro.png);
+  background-position: center;
+  transform: translate(272px, 28px);
+}
+.blue:active {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  background: url(../../assets/images/simon/azuloscuro.png);
+  background-position: center;
+  transform: translate(271px, -151px);
+}
+.bloqueoCentro {
+  position: relative;
+  left: 50%;
+  bottom: 115.5%;
+  transform: translate(-50%, 50%);
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+}
+.bloqueoEquina1 {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  left: 0;
+  bottom: 165%;
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    12% 100%,
+    14% 80%,
+    20% 65%,
+    32% 45%,
+    50% 30%,
+    70% 17%,
+    85% 15%,
+    100% 10%,
+    100% 0%
+  );
+}
+.bloqueoEquina2 {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  left: 53%;
+  bottom: 212%;
+  clip-path: polygon(
+    0 0,
+    0 12%,
+    15% 14%,
+    27% 18%,
+    38% 22%,
+    50% 30%,
+    70% 49%,
+    79% 65%,
+    85% 80%,
+    88% 100%,
+    100% 100%,
+    100% 0%
+  );
+}
+.bloqueoEquina3 {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  left: 0%;
+  bottom: 206%;
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    100% 100%,
+    100% 88%,
+    83% 85%,
+    63% 78%,
+    48% 68%,
+    35% 56%,
+    25% 40%,
+    14% 15%,
+    12% 0%
+  );
+}
+.bloqueoEquina4 {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  left: 53%;
+  bottom: 252.5%;
+  clip-path: polygon(
+    0 87%,
+    0 100%,
+    100% 100%,
+    100% 0%,
+    88% 0%,
+    86% 13%,
+    81% 27%,
+    73% 44%,
+    55% 65%,
+    35% 78%,
+    20% 83%
+  );
+}
+#startButton {
+  cursor: pointer;
+  position: relative;
+  left: 0%;
+  bottom: 43%;
+  width: 60px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px #090909 solid;
+  background: linear-gradient(145deg, #171717, #444245);
+  box-shadow: inset 1px 1px 0px #7d7c7e, inset -1px -1px 0px #1c1c1c;
+  color: #a6a6a6;
+}
+#startButton:active {
+  background: linear-gradient(-185deg, #131313, #444245);
+  box-shadow: inset -1px -1px 0px #5e5e5e, inset 1px 1px 0px #1c1c1c;
+  color: #fff;
+}
+
+#round {
+  user-select: none;
+  position: relative;
+  bottom: 45%;
+  left: 0%;
+  background-color: rgb(167, 167, 167);
+  border: 1px #090909 solid;
+  border-radius: 4px;
+  width: 70px;
+  height: 23px;
+  text-align: center;
+  padding: 2px;
+  box-shadow: inset -2px -2px 0px #5e5e5e, inset 2px 2px 0px #1c1c1c;
+}
+#listen {
+  height: 25px;
+  font-family: "Digital";
+  color: aqua;
+  position: relative;
+  bottom: 50%;
+  left: 0%;
+  font-size: 20px;
+}
+.redbright {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background: url(../../assets/images/simon/rojobrillante.png);
+  background-position: center;
+  transform: translate(262px, -614px);
+  z-index: -1;
+  opacity: 0;
+  animation: brillo 0.6s ease-in-out;
+}
+
+.yellowbright {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background: url(../../assets/images/simon/amarillobrillante.png);
+  background-position: center;
+  transform: translate(20px, -371px);
+  z-index: -1;
+  opacity: 0;
+  animation: brillo 0.6s ease-in-out;
+}
+.bluebright {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background: url(../../assets/images/simon/azulbrillante.png);
+  background-position: center;
+  transform: translate(260px, -370px);
+  z-index: -1;
+  opacity: 0;
+  animation: brillo 0.6s ease-in-out;
+}
+
+.greenbright {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background: url(../../assets/images/simon/verdebrillante.png);
+  background-position: center;
+  transform: translate(20px, -612px);
+  z-index: -1;
+  opacity: 0;
+  animation: brillo 0.6s ease-in-out;
+}
+
+.winner {
+  animation: spin 1s ease-in-out;
+}
+@keyframes brillo {
+  0% {
+    z-index: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(180deg);
+  }
+}

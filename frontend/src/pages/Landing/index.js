@@ -10,6 +10,12 @@ const Landing = () => {
             <p>BlockGame</p>
           </Link>
         </li>
+        <li key="2">
+          <h3>Simon Says</h3>
+          <Link to="/SimonSays">
+            <p>SimonSays</p>
+          </Link>
+        </li>
       </ul>
     </section>
   );

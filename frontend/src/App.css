@@ -2,6 +2,10 @@
   font-family: "UbuntuFont";
   src: url("../src/assets/fonts/Ubuntu-R.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Digital";
+  src: url("../src/assets/fonts/DS-DIGIB.TTF") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
