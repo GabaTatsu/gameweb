@@ -1,0 +1,19 @@
+main > section > ul {
+  display: flex;
+  gap: 2rem;
+}
+
+main > section > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > section > ul > li a {
+  text-decoration: none;
+  color: black;
+}
+
+main > section > ul img {
+  width: 20rem;
+  height: 20rem;
+}

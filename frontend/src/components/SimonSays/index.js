@@ -13,7 +13,7 @@ const SimonSays = () => {
   const blueSound = new Audio(blueSounds);
   const errorSound = new Audio(errorSounds);
   const [disableStartButton, setDisableStartButton] = useState(false);
-  const [listen, setListen] = useState("");
+  const [listen, setListen] = useState("PRESS START");
   const [round, setRound] = useState(1);
   const [classNameRed, setClassNameRed] = useState("");
   const [classNameYellow, setClassNameYellow] = useState("");
@@ -192,6 +192,15 @@ const SimonSays = () => {
       >
         Start
       </button>
+      <article>
+        <h3>INSTRUCTIONS</h3>
+        <p>-To start the game press start button</p>
+        <p>-To start the next round press start button</p>
+        <p>-When you make a mistake the game restarts itself</p>
+        <p>
+          -If you complete the game you have to refresh the page to start over
+        </p>
+      </article>
     </div>
   );
 };

@@ -1,19 +1,34 @@
+import "./style.css";
 import { Link } from "react-router-dom";
+import blockGamePreview from "../../assets/images/BlockGamePreview.png";
+import symonSaysPreview from "../../assets/images/SimonSaysPreview.png";
 
 const Landing = () => {
   return (
     <section>
       <ul>
         <li key="1">
-          <h3>Blocks Game</h3>
           <Link to="/BlockGame">
-            <p>BlockGame</p>
+            <h3>Blocks Game</h3>
+          </Link>
+          <Link to="/BlockGame">
+            <img src={blockGamePreview} alt="Blocks Game" />
           </Link>
         </li>
         <li key="2">
-          <h3>Simon Says</h3>
           <Link to="/SimonSays">
-            <p>SimonSays</p>
+            <h3>Simon Says</h3>
+          </Link>
+          <Link to="/SimonSays">
+            <img src={symonSaysPreview} alt="Symon Says Game" />
+          </Link>
+        </li>
+        <li key="3">
+          <Link to="/ShooterGame">
+            <h3>Shooter Game</h3>
+          </Link>
+          <Link to="/ShooterGame">
+            <img src={symonSaysPreview} alt="Shooter Game" />
           </Link>
         </li>
       </ul>

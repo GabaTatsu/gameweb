@@ -1,6 +1,7 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/game-console.svg";
+import logoReact from "../../assets/images/logo192.png";
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
       <Link to="/">
         <h1>My Games</h1>
       </Link>
+      <img src={logoReact} alt="React.js"></img>
     </header>
   );
 };

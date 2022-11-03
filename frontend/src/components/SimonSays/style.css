@@ -2,7 +2,7 @@
   padding: 10px;
   border-radius: 5px;
   width: 40rem;
-  height: 40rem;
+  height: 45rem;
   border: 1px solid rgb(0, 0, 0);
   background: url(../../assets/images/bullet-443852_1920.jpg) fixed;
   background-size: contain;
@@ -198,7 +198,7 @@
 #round {
   user-select: none;
   position: relative;
-  bottom: 45%;
+  bottom: 34.5%;
   left: 0%;
   background-color: rgb(167, 167, 167);
   border: 1px #090909 solid;
@@ -214,7 +214,7 @@
   font-family: "Digital";
   color: aqua;
   position: relative;
-  bottom: 50%;
+  bottom: 43%;
   left: 0%;
   font-size: 20px;
 }
@@ -263,6 +263,20 @@
   z-index: -1;
   opacity: 0;
   animation: brillo 0.6s ease-in-out;
+}
+
+.simon > article {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.simon > article h3 {
+  font-size: 1rem;
+}
+
+.simon > article p {
+  font-size: 0.8rem;
 }
 
 .winner {
