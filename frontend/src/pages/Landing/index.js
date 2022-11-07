@@ -23,14 +23,6 @@ const Landing = () => {
             <img src={symonSaysPreview} alt="Symon Says Game" />
           </Link>
         </li>
-        <li key="3">
-          <Link to="/ShooterGame">
-            <h3>Shooter Game</h3>
-          </Link>
-          <Link to="/ShooterGame">
-            <img src={symonSaysPreview} alt="Shooter Game" />
-          </Link>
-        </li>
       </ul>
     </section>
   );
